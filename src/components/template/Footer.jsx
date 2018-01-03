@@ -4,13 +4,9 @@ import '../../css/footer.css';
 class Footer extends Component {
   render() {
     return (
-      <header className="header">
-        <div className="app-header">
-       
-          <h1 className="App-title">This is Forum Footer</h1>
+        <div>
+          <h1>This is Forum Footer</h1>
         </div>
-
-      </header>
     );
   }
 }
