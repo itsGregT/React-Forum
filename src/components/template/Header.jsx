@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navigation from './Navigation'
 import '../../css/header.css';
 
 class Header extends Component {
@@ -6,10 +7,9 @@ class Header extends Component {
     return (
       <header className="header">
         <div className="app-header">
-       
-          <h1 className="App-title">This is Forum Header</h1>
+          <h1 className="app-title">Forum<span>Header</span></h1>
         </div>
-
+        <Navigation />
       </header>
     );
   }
