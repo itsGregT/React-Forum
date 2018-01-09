@@ -5,7 +5,15 @@ header {
 	margin: 0;
 	font-family: 'Noto Sans', sans-serif;
 	height: 75px;
-	position: relative;
+	position: sticky;
+	width: 100%;
+	top: 0;
+	transition: all 0.25s ease;
+}
+
+.shrink {
+	height: 50px;
+	font-size: 0.8em;
 }
 
 .app-header {

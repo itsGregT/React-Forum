@@ -4,9 +4,9 @@ import '../../css/footer.css';
 class Footer extends Component {
   render() {
     return (
-        <div>
+        <footer>
           <h1>This is Forum Footer</h1>
-        </div>
+        </footer>
     );
   }
 }
