@@ -6,16 +6,14 @@ import { BrowserRouter, Match, Miss } from 'react-router';
 import './css/styles.css'
 
 //Components
-import Home from './components/Home.jsx';
-import TopicCard from './components/TopicCard.jsx';
-import NotFound from './components/notfound.jsx';
+import Home from './components/pages/home/Home.jsx';
+import NotFound from './components/pages/404/notfound.jsx';
 
 const Root = () => {
 	return (
 		<BrowserRouter>
-			<div>
+			<div className="page">
 				<Match exactly pattern="/" component={Home} />
-				<Match exactly pattern="/topic-card" component={TopicCard} />
 				<Miss component={NotFound} />
 			</div>
 		</BrowserRouter>
@@ -25,5 +23,5 @@ const Root = () => {
 
 
 
-ReactDOM.render(<Root />, document.getElementById('root'));
+ReactDOM.render(<Root />, document.querySelector('body'));
 //registerServiceWorker();

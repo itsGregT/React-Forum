@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation'
-import '../../css/header.css';
+import Navigation from '../navigation/Navigation'
+import './css/header.css';
 
 class Header extends Component {
   constructor() {

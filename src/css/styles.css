@@ -1,22 +1,22 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  
 }
-
-.App {
-  text-align: center;
+html {
+	margin:0;
+	padding: 0;
+	background-color:#ededed;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.content {
+	min-height: 100vh;
+		margin-top: 50px;
 }
-
-.App-intro {
-  font-size: large;
+.left {
+	width: 20%;
+	float: left;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.right {
+	width: 80%;
+	float: left;
 }

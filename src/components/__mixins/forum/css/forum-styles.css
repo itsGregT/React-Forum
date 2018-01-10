@@ -1,0 +1,10 @@
+.forum {
+	
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.forum-content {
+	/*background-color: #fff;*/
+	padding: 10px;
+}
