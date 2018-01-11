@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SearchFilter from '../../__mixins/searchFilter/SearchFilter';
 
 //Template parts
 import Header from '../../__templateParts/header/Header';
@@ -8,6 +9,7 @@ import Forum from '../../__mixins/forum/Forum';
 
 //Data
 import topics from '../../../topics.json';
+import categories from '../../../categories.json';
 
 
 
@@ -25,7 +27,7 @@ class Home extends Component {
           <div className="content" >
           		<div className="container" style={{ maxWidth:'1050px', margin:'auto', minHeight: '600px'}}>
           				<div className="left">
-          					<p>Aside</p>
+          					<SearchFilter />
           				</div>
           				<div className="right">
           					<Forum topics={topics} />
