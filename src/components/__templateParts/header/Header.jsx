@@ -17,7 +17,7 @@ class Header extends Component {
   shrinkHeader() {
     const header = document.getElementById('header');
     const distanceY = window.pageYOffset;
-      if(distanceY >= 100) {
+      if(distanceY > 101) {
         header.classList.add('shrink');
       } else {
         header.classList.remove('shrink');

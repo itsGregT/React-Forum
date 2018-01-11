@@ -6,5 +6,9 @@
 
 .forum-content {
 	/*background-color: #fff;*/
-	padding: 10px;
+	padding: 0 10px 10px;
+}
+
+.forum-content h2 {
+	margin-top: 0px;
 }
