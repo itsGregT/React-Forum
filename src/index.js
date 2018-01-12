@@ -23,5 +23,5 @@ const Root = () => {
 
 
 
-ReactDOM.render(<Root />, document.querySelector('body'));
+ReactDOM.render(<Root />, document.querySelector('#root'));
 //registerServiceWorker();

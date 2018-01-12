@@ -5,9 +5,6 @@ import TopicRow from '../topicrow/TopicRow';
 import './css/forum-styles.css';
 
 class Forum extends Component {
-	constructor(props) {
- 		super(props);
-	}
 	render() {
 		const {topics} = this.props;
 		return (
