@@ -2,27 +2,27 @@
 	background-color: #fff;
 	min-height: 80px;
 	margin-top: 20px;
-	transition: 0.6s;
+}
+.topic:first-of-type {
+	margin-top: 5px;
 }
 .topic:hover {
-	transform:scale(1.05);
-	background-color: rgba(255,255,255,0.85);
-	cursor:pointer;
-
+	/*transform:scale(1.05);*/
+	background-color: rgba(255, 255, 255, 0.85);
+	cursor: pointer;
 }
 
 /******************/
 .row-left {
 	width: 10%;
-	float:left;
-	border-right:1px solid #ededed;
-
+	float: left;
+	border-right: 1px solid #ededed;
 }
 .row-left img {
 	width: 100%;
 	max-width: 50px;
 	padding: 5px;
-  transform: translate(40%,25%);
+	transform: translate(40%, 25%);
 }
 
 .row-middle {
@@ -37,22 +37,23 @@
 }
 .row-middle .topic-description {
 	padding-left: 5px;
+	padding-top: 15px;
 	line-height: 19px;
 }
-
 
 .row-right {
 	width: 20%;
 	float: left;
 	text-align: center;
 	border-left: 1px solid #ededed;
+	padding: 10px 0;
 }
 .row-right .author-avatar {
 	/*text-align:center;*/
 }
 .row-right img {
 	width: 50%;
-	margin:auto;
+	margin: auto;
 	border-radius: 50%;
 }
 .topic-meta {
@@ -61,8 +62,8 @@
 	padding-left: 10%;
 }
 .topic-meta .author {
-	font-weight:bold;
+	font-weight: bold;
 }
 .topic-meta .date {
-	font-weight:bold;
+	font-weight: bold;
 }

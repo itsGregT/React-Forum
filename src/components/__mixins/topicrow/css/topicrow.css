@@ -1,11 +1,13 @@
 .topic {
   background-color: #fff;
   min-height: 80px;
-  margin-top: 20px;
-  transition: 0.6s; }
+  margin-top: 20px; }
+
+.topic:first-of-type {
+  margin-top: 5px; }
 
 .topic:hover {
-  transform: scale(1.05);
+  /*transform:scale(1.05);*/
   background-color: rgba(255, 255, 255, 0.85);
   cursor: pointer; }
 
@@ -33,13 +35,15 @@
 
 .row-middle .topic-description {
   padding-left: 5px;
+  padding-top: 15px;
   line-height: 19px; }
 
 .row-right {
   width: 20%;
   float: left;
   text-align: center;
-  border-left: 1px solid #ededed; }
+  border-left: 1px solid #ededed;
+  padding: 10px 0; }
 
 .row-right .author-avatar {
   /*text-align:center;*/ }
