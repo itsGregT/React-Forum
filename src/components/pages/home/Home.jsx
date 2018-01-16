@@ -16,6 +16,7 @@ import categories from '../../../categories.json';
 class Home extends Component {
 	componentWillMount() {	
 		this.setState({topics});
+		this.setState({categories});
 	}
 	render() {
 		return (
@@ -24,7 +25,7 @@ class Home extends Component {
 	          <div className="content" >
 	          		<div className="container" style={{ maxWidth:'1200px', margin:'auto', minHeight: '600px'}}>
 	          				<div className="left">
-	          					<SearchFilter categories={ categories } />
+	          					<SearchFilter categories={categories} /> 
 	          				</div>
 	          				<div className="right">
 	          					<Forum topics={topics} />
