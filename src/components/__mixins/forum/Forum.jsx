@@ -20,9 +20,9 @@ class Forum extends Component {
 	}
 	changeBtn(position) {
 		if (position === 'down') {
-			this.arrow.style.transform = 'rotateZ(0deg) translateY(0)';
+			this.arrow.style.transform = 'rotateZ(-90deg) translate(10%, 40%)';
 		} else {
-			this.arrow.style.transform = 'rotateZ(180deg) translateY(20%)';
+			this.arrow.style.transform = 'rotateZ(0deg) translate(20%, 0%)';
 		}
 	}
 	componentDidMount() {}
