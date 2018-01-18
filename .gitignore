@@ -5,6 +5,8 @@
 
 # testing
 /coverage
+# Rebase logins
+/src/base.js
 
 # production
 /build
