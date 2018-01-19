@@ -67,3 +67,25 @@
 .topic-meta .date {
 	font-weight: bold;
 }
+.left-topic-date {
+	width:50%;
+	float:left;
+}
+.rigth-topic-date {
+	width:50%;
+	float:left;
+}
+.topic-date {
+	margin-top:20px;
+	text-align:center;
+	p {
+		font-size:0.57em;
+
+	}
+	.left-topic-date p {
+		font-weight:bold;
+		font-size:0.7em;
+	}
+}
+
+

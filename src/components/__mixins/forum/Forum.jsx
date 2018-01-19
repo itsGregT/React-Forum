@@ -25,7 +25,9 @@ class Forum extends Component {
 			this.arrow.style.transform = 'rotateZ(0deg) translate(20%, 0%)';
 		}
 	}
-	componentDidMount() {}
+	componentDidMount() {
+
+	}
 	render() {
 		const { topics } = this.props;
 		return (
@@ -42,7 +44,11 @@ class Forum extends Component {
 				<div className="fl_c" />
 				<div ref={input => (this.forumContent = input)} className="forum-content">
 					{topics.map(topic => {
-						return <TopicRow key={Math.random()} topic={topic} />;
+						let date = new Date(topic.created);
+						let since = date.getMonth()+1 + '/' + date.getDate() + '  ' + date.getFullYear();
+						let createdDate = date.getMonth()+1 + '/' + date.getDate() + ' ' + date.getFullYear();
+						let createdTime = date.getHours() + ':' + date.getMinutes();	
+						return <TopicRow key={Math.random()} topic={topic} since={ since } createdTime={ createdTime }  createdDate={ createdDate }/>;
 					})}
 				</div>
 			</div>

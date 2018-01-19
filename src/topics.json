@@ -1,85 +1,118 @@
-[
-  {
-    "title": "This apartment complex looks like a sci-fi prison",
-    "date": "01/03/2018",
-    "category": "code",
-    "comments": 0,
-    "author": "Devonvn",
-    "author_avatar": "http://www.cambridgeblog.org/wp-content/themes/fifteen/images/avatar_default.jpg",
-    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+{
+  "users": {
+    "user1": {
+      "authorName": "Devonvn",
+      "authorAvatar": "http://www.cambridgeblog.org/wp-content/themes/fifteen/images/avatar_default.jpg",
+      "memberSince": 1516386106232,
+      "posts":1
+    },
+    "user2": {
+      "authorName": "suubzs",
+      "authorAvatar": "https://img00.deviantart.net/e4a2/i/2016/096/f/7/avatar_icon_by_astrolink247-d9xxs6r.jpg",
+      "memberSince": 1516386106232,
+      "posts":1
+    },
+    "user3": {
+      "authorName": "Plobis",
+      "authorAvatar": "https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png",
+      "memberSince": 1516386106232,
+      "posts":1
+    },
+    "user4": {
+      "authorName": "Jamtonisalon",
+      "authorAvatar": "http://www.iconarchive.com/download/i47414/hopstarter/face-avatars/Female-Face-FC-4.ico",
+      "memberSince": 1516386106232,
+      "posts":1
+    }
   },
-  {
-    "title": "Lightning Lizzie",
-    "date": "01/03/2018",
-    "author": "suubzs",
-    "category": "other",
-    "author_avatar": "https://img00.deviantart.net/e4a2/i/2016/096/f/7/avatar_icon_by_astrolink247-d9xxs6r.jpg",
-    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+  "topics": {
+    "tp1": {
+      "title": "This apartment complex looks like a sci-fi prison",
+      "authorId": "user1",
+      "authorName": "Devonvn",
+      "authorAvatar": "http://www.iconarchive.com/download/i47414/hopstarter/face-avatars/Female-Face-FC-4.ico",
+      "created": 1516386106232,
+      "category": "Board Games",
+      "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+    },
+    "tp2": {
+      "title": "This apartment complex looks like a sci-fi prison",
+      "authorId": "user2",
+      "authorName": "suubzs",
+      "authorAvatar": "https://img00.deviantart.net/e4a2/i/2016/096/f/7/avatar_icon_by_astrolink247-d9xxs6r.jpg",
+      "created": 1516386106232,
+      "category": "Board Games",
+      "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+    },
+    "tp3": {
+      "title": "This apartment complex looks like a sci-fi prison",
+      "authorId": "user3",
+      "authorName": "Plobis",
+      "authorAvatar": "https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png",
+      "created": 1516386106232,
+      "category": "Board Games",
+      "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+    },
+    "tp4": {
+      "title": "This apartment complex looks like a sci-fi prison",
+      "authorId": "user3",
+      "authorName": "Plobis",
+      "authorAvatar": "https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png",
+      "created": 1516386106232,
+      "category": "Board Games",
+      "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+    },
+    "tp5": {
+      "title": "This apartment complex looks like a sci-fi prison",
+      "authorId": "user4",
+      "authorName": "Jamtonisalon",
+      "authorAvatar": "http://www.iconarchive.com/download/i47414/hopstarter/face-avatars/Female-Face-FC-4.ico",
+      "created": 1516386106232,
+      "category": "Board Games",
+      "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+    }
   },
-  {
-    "title": "Bend it like Adriana Leon",
-    "date": "01/03/2018",
-    "author": "Plobis",
-    "author_avatar": "https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png",
-    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+  "comments": {
+    "com1": {
+      "topicId": "tp1",
+      "authorId": "user1",
+      "authorName": "Devonvn",
+      "authorAvatar": "http://www.iconarchive.com/download/i47414/hopstarter/face-avatars/Female-Face-FC-4.ico",
+      "posted": 1516386106232,
+      "referTo": ""
+    },
+    "com2": {
+      "topicId": "tp1",
+      "authorId": "user2",
+      "authorName": "suubzs",
+      "authorAvatar": "https://img00.deviantart.net/e4a2/i/2016/096/f/7/avatar_icon_by_astrolink247-d9xxs6r.jpg",
+      "posted": 1516386106232,
+      "referTo": ""
+    },
+    "com3": {
+      "topicId": "tp1",
+      "authorId": "user3",
+      "authorName": "Plobis",
+      "authorAvatar": "https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png",
+      "posted": 1516386106232,
+      "referTo": ""
+    }
   },
-  {
-    "title": "Risky, but still clean.",
-    "date": "01/03/2018",
-    "category": "code",
-    "author": "Jamtonisalon",
-    "author_avatar": "http://www.iconarchive.com/download/i47414/hopstarter/face-avatars/Female-Face-FC-4.ico",
-    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
-  },
-  {
-    "title": "Did I do this level right?",
-    "date": "01/03/2018",
-    "category": "other",
-    "author": "justins_self",
-    "author_avatar": "http://www.iconarchive.com/download/i47482/hopstarter/face-avatars/Male-Face-I2.ico",
-    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
-  },
-  {
-    "title": "MFW the T_Ders come here to scream about how 'not worried' they are about the investigation",
-    "date": "01/03/2018",
-    "author": "malgoya",
-    "author_avatar": "http://www.cambridgeblog.org/wp-content/themes/fifteen/images/avatar_default.jpg",
-    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
-  },
-  {
-    "title": "This apartment complex looks like a sci-fi prison",
-    "date": "01/03/2018",
-    "categoryImg": "",
-    "comments": 0,
-    "author": "Devonvn",
-    "author_avatar": "http://www.cambridgeblog.org/wp-content/themes/fifteen/images/avatar_default.jpg",
-    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
-  },
-  {
-    "title": "This apartment complex looks like a sci-fi prison",
-    "date": "01/03/2018",
-    "categoryImg": "",
-    "comments": 0,
-    "author": "Devonvn",
-    "author_avatar": "http://www.cambridgeblog.org/wp-content/themes/fifteen/images/avatar_default.jpg",
-    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
-  },
-  {
-    "title": "This apartment complex looks like a sci-fi prison",
-    "date": "01/03/2018",
-    "categoryImg": "",
-    "comments": 0,
-    "author": "Devonvn",
-    "author_avatar": "http://www.cambridgeblog.org/wp-content/themes/fifteen/images/avatar_default.jpg",
-    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
-  },
-  {
-    "title": "This apartment complex looks like a sci-fi prison",
-    "date": "01/03/2018",
-    "categoryImg": "",
-    "comments": 0,
-    "author": "Devonvn",
-    "author_avatar": "http://www.cambridgeblog.org/wp-content/themes/fifteen/images/avatar_default.jpg",
-    "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+  "categories": {
+    "cat1": {
+      "name": "Board Games"
+    },
+    "cat2": {
+      "name": "Card Games"
+    },
+    "cat3": {
+      "name": "PC Games"
+    },
+    "cat4": {
+      "name": "Console Games"
+    },
+    "cat5": {
+      "name": "Handheld Games"
+    }
   }
-]
+}
