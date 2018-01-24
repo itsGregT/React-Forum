@@ -26,7 +26,6 @@ class Home extends Component {
 		this.ref = base.bindToState('topics', {
 			context: this,
 			state: 'topics',
-			asArray: true,
 			queries: {
 				orderByChild: 'created',
 				startAt: dateNow,

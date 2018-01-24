@@ -43,52 +43,54 @@ class TopicRow extends Component {
 		});
 	}
 	render() {
-		const { topic, since, createdDate, createdTime } = this.props;
+		const { topic, since, createdDate, createdTime, topicId } = this.props;
 		const posts  = this.state.users[0].posts;
 		return (
 			<div className="topic">
-				<div className="row-left">
-					<div className="category-img">
-						<img src={this.categoryImg(topic.category)} alt="" />
-					</div>
-					<div className="topic-date">
-						<div className="left-topic-date">
-							<p>Created: </p>
+				<a href={`article/${topicId}`}>
+					<div className="row-left">
+						<div className="category-img">
+							<img src={this.categoryImg(topic.category)} alt="" />
 						</div>
-						<div className="rigth-topic-date">
-							<p>{ createdDate }</p>
-							<p>{ createdTime }</p>
+						<div className="topic-date">
+							<div className="left-topic-date">
+								<p>Created: </p>
+							</div>
+							<div className="rigth-topic-date">
+								<p>{ createdDate }</p>
+								<p>{ createdTime }</p>
+							</div>
+							<div className="fl_c"></div>
 						</div>
-						<div className="fl_c"></div>
 					</div>
-				</div>
-				<div className="row-middle">
-					<div className="topic-title">
-						<h3>{topic.title}</h3>
+					<div className="row-middle">
+						<div className="topic-title">
+							<h3>{topic.title}</h3>
+						</div>
+						<div className="topic-description">
+							<p>{topic.text}</p>
+						</div>
 					</div>
-					<div className="topic-description">
-						<p>{topic.text}</p>
+					<div className="row-right">
+						<div className="author-avatar">
+							<img src={topic.authorAvatar} alt="" />
+						</div>
+						<div className="topic-meta">
+							<p>
+								By: <span className="author">{topic.authorName} </span>
+							</p>
+							<p>
+								Status: <span className="author">Veteran</span>
+							</p>
+							<p>
+								Posts: <span className="author">{ posts} </span>
+							</p>
+							<p>
+								Member Since: <span className="date">{ since }</span>
+							</p>
+						</div>
 					</div>
-				</div>
-				<div className="row-right">
-					<div className="author-avatar">
-						<img src={topic.authorAvatar} alt="" />
-					</div>
-					<div className="topic-meta">
-						<p>
-							By: <span className="author">{topic.authorName} </span>
-						</p>
-						<p>
-							Status: <span className="author">Veteran</span>
-						</p>
-						<p>
-							Posts: <span className="author">{ posts} </span>
-						</p>
-						<p>
-							Member Since: <span className="date">{ since }</span>
-						</p>
-					</div>
-				</div>
+				</a>
 				<div className="fl_c" />
 			</div>
 		);

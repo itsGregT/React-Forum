@@ -2,14 +2,12 @@
   background-color: #fff;
   min-height: 80px;
   margin-top: 20px; }
+  .topic:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer; }
 
 .topic:first-of-type {
   margin-top: 5px; }
-
-.topic:hover {
-  /*transform:scale(1.05);*/
-  background-color: rgba(255, 255, 255, 0.85);
-  cursor: pointer; }
 
 /******************/
 .row-left {

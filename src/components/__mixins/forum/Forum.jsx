@@ -9,13 +9,13 @@ class Forum extends Component {
 		super(props);
 		this.expand = this.expand.bind();
 	}
-	expand(com) {
-		if (com.forumContent.clientHeight > 0) {
-			com.forumContent.style.height = 0 + 'px';
-			com.changeBtn('down');
+	expand(component) {
+		if (component.forumContent.clientHeight > 0) {
+			component.forumContent.style.height = 0 + 'px';
+			component.changeBtn('down');
 		} else {
-			com.forumContent.style.height = 'auto';
-			com.changeBtn();
+			component.forumContent.style.height = component.forumContentInner.clientHeight+'px';
+			component.changeBtn();
 		}
 	}
 	changeBtn(position) {
@@ -25,7 +25,8 @@ class Forum extends Component {
 			this.arrow.style.transform = 'rotateZ(0deg) translate(20%, 0%)';
 		}
 	}
-	componentDidMount() {
+	componentDidUpdate() {
+		window.addEventListener('load', () => { this.forumContent.style.height = this.forumContentInner.clientHeight+'px'; });
 
 	}
 	render() {
@@ -43,13 +44,15 @@ class Forum extends Component {
 				</div>
 				<div className="fl_c" />
 				<div ref={input => (this.forumContent = input)} className="forum-content">
-					{topics.map(topic => {
-						let date = new Date(topic.created);
-						let since = date.getMonth()+1 + '/' + date.getDate() + '  ' + date.getFullYear();
-						let createdDate = date.getMonth()+1 + '/' + date.getDate() + ' ' + date.getFullYear();
-						let createdTime = date.getHours() + ':' + date.getMinutes();	
-						return <TopicRow key={Math.random()} topic={topic} since={ since } createdTime={ createdTime }  createdDate={ createdDate }/>;
-					})}
+					<div ref={input => (this.forumContentInner = input)} className="forum-coontent-inner" >
+						{Object.keys(topics).map(topic => {
+							let date = new Date(topics[topic].created);
+							let since = date.getMonth()+1 + '/' + date.getDate() + '  ' + date.getFullYear();
+							let createdDate = date.getMonth()+1 + '/' + date.getDate() + ' ' + date.getFullYear();
+							let createdTime = date.getHours() + ':' + date.getMinutes();	
+							return <TopicRow key={topic} topicId={topic} topic={topics[topic]} since={ since } createdTime={ createdTime }  createdDate={ createdDate }/>;
+						})}
+					</div>
 				</div>
 			</div>
 		);
