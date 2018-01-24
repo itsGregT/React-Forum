@@ -28,7 +28,7 @@ class Header extends Component {
     return (
       <header id="header">
         <div className='app-header'>
-          <h1 className='app-title'>Forum<span>Header</span></h1>
+          <a href="/"><h1 className='app-title'>Forum<span>Header</span></h1></a>
         </div>
         <Navigation />
       </header>

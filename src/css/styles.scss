@@ -24,7 +24,10 @@ h1,h2,h3,h4,h5,h6, p {
 	padding: 0;
 	margin:0;
 }
-
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+	color:inherit;
+}
 .content {
 	min-height: 100vh;
 	margin-top: 50px;
@@ -47,9 +50,13 @@ h1,h2,h3,h4,h5,h6, p {
 /******Articles******/
 .article {
 	font-size: 1.25em;
-	padding: 30px;;
-	background-color: white;
+	padding: 0 15px;
+	.article-content {
+		background-color: white;
+		padding:15px;	
+	}
 }
+
 
 .article-subheader {
 	font-size: 0.95em;
