@@ -46,7 +46,7 @@ class Home extends Component {
 			<div id="home">
 			<Header />	
 	          <div className="content" >
-	          		<div className="container" style={{ maxWidth:'1200px', margin:'auto', minHeight: '600px'}}>
+	          		<div className="container">
 	          				<div className="left">
 	          					<SearchFilter categories={categories} /> 
 	          				</div>
