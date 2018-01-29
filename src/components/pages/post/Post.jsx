@@ -3,7 +3,6 @@ import Header from '../../__templateParts/header/Header';
 import Footer from '../../__templateParts/footer/Footer';
 import SearchFilter from '../../__mixins/searchFilter/SearchFilter';
 import base from '../../../base';
-
 import categories from '../../../categories.json';
 
 class Post extends Component {
@@ -26,7 +25,7 @@ class Post extends Component {
 		const post = this.state.post[this.Id];
 		let createdDate = '';
 		let createdTime = '';
-		if (this.state.post.created !== 'loading') {
+		if (this.state.post.created !== 'loading' && post && post.hasOwnProperty('created') ) {
 			let date = new Date(post.created);
 			createdDate = date.getMonth()+1 + '/' + date.getDate() + ' ' + date.getFullYear();
 			createdTime = date.getHours() + ':' + date.getMinutes();	
