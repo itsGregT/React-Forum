@@ -22,15 +22,15 @@ class Home extends Component {
 	componentWillMount() {	
 		const oneDay = 86400000;
 		const dateNow = Date.now() - (oneDay * 7);
-
+		console.log(dateNow);	
 		this.ref = base.bindToState('topics', {
 			context: this,
 			state: 'topics',
 			queries: {
-				orderByChild: 'created',
-				startAt: dateNow,
+				orderByChild: 'created'
   			}
 		});
+		console.log(this.state);
 
 	}
 	componentDidMount() {
@@ -41,6 +41,7 @@ class Home extends Component {
 	}
 	render() {
 		const { topics } = this.state;
+
 		return (
 			<div id="home">
 			<Header />	
