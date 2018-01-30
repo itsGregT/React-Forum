@@ -21,7 +21,6 @@ class Post extends Component {
 			text: ''
 		};
 		this.state = defaultState;
-		this.title = this.props.params.title;
 	}
 	componentWillMount() {
 		this.ref = base.bindToState('topics', {
@@ -35,7 +34,6 @@ class Post extends Component {
 	}
 	render() {
 		const post = this.state.post[this.Id];
-		const { topics } = this.props;
 		let createdDate = '';
 		let createdTime = '';
 		if (post.created !== 'loading' && post && post.hasOwnProperty('created')) {
@@ -45,7 +43,7 @@ class Post extends Component {
 		}
 		console.log(createdDate);
 		console.log(createdTime);
-		console.log(this.state);
+		console.log(post);
 		return (
 			<div>
 				<Header />
@@ -57,15 +55,17 @@ class Post extends Component {
 							</div>
 							<div className="right post-container">
 								<div className="post-title forum-header">
-									<h2>This is the post title.</h2>
+									<h2>{post.title}</h2>
 								</div>
 								<div className="full-post">
 									<div className="post">
-										<div className="post-info">Here is some post information.</div>
-										<p>This is the post.</p>
+										<div className="post-info">Topic: {post.category}</div>
+										<p>{post.text}</p>
 									</div>
 									<div className="author-info">
-										<p>This is the author</p>
+										<img src={post.authorAvatar} alt=""/>
+										<p>Author: {post.authorName}</p>
+										<p>Created: {post.created}</p>
 									</div>
 									<div className="fl_c" />
 								</div>
