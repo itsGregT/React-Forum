@@ -47,7 +47,7 @@ class TopicRow extends Component {
 		const posts  = this.state.users[0].posts;
 		return (
 			<div className="topic">
-				<a href={`article/${topicId}`}>
+				<a href={`post/${topicId}`}>
 					<div className="row-left">
 						<div className="category-img">
 							<img src={this.categoryImg(topic.category)} alt="" />

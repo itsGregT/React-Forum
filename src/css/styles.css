@@ -38,29 +38,22 @@ a, a:hover, a:active, a:visited {
 .fl_c {
   clear: both; }
 
-/******Articles******/
-.article {
-  font-size: 1.25em;
+/******Post******/
+.post-container {
   padding: 0 15px; }
-  .article .article-content {
-    background-color: white;
-    padding: 15px; }
 
-.article-subheader {
-  font-size: 0.95em;
-  font-style: italic; }
+.full-post {
+  background-color: #fff; }
 
-.article img {
-  width: 100%;
-  margin: 15px 0; }
+.post {
+  float: left;
+  width: 80%;
+  padding: 5px; }
+  .post .post-info {
+    font-style: italic; }
 
-.article h1,
-.article h2 {
-  font-family: "Rubik", sans-serif; }
-
-.article h2 {
-  margin-top: 60px; }
-
-.article p {
-  font-family: "Roboto Mono", serif;
-  margin-bottom: 15px; }
+.author-info {
+  float: right;
+  width: 20%;
+  border-left: 1px solid #333;
+  padding: 5px; }
