@@ -47,37 +47,28 @@ a, a:hover, a:active, a:visited {
 	clear:both;
 }
 
-/******Articles******/
-.article {
-	font-size: 1.25em;
+/******Post******/
+.post-container {
 	padding: 0 15px;
-	.article-content {
-		background-color: white;
-		padding:15px;	
+}
+
+.full-post {
+	background-color: #fff;
+}
+
+.post {
+	float: left;
+	width: 80%;
+	padding: 5px;
+
+	.post-info {
+		font-style: italic;
 	}
 }
 
-
-.article-subheader {
-	font-size: 0.95em;
-	font-style: italic;
-}
-
-.article img {
-	width: 100%;
-	margin: 15px 0;
-}
-
-.article h1,
-.article h2 {
-	font-family: $primary-font-stack;
-}
-
-.article h2 {
-	margin-top: 60px;
-}
-
-.article p {
-	font-family: $secondary-font-stack;
-	margin-bottom: 15px;
+.author-info {
+	float: right;
+	width: 20%;
+	border-left: 1px solid #333;
+	padding: 5px;
 }
