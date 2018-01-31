@@ -22,7 +22,6 @@ class Home extends Component {
 	componentWillMount() {	
 		const oneDay = 86400000;
 		const dateNow = Date.now() - (oneDay * 7);
-		console.log(dateNow);	
 		this.ref = base.bindToState('topics', {
 			context: this,
 			state: 'topics',
@@ -30,7 +29,6 @@ class Home extends Component {
 				orderByChild: 'created'
   			}
 		});
-		console.log(this.state);
 
 	}
 	componentDidMount() {
@@ -48,7 +46,7 @@ class Home extends Component {
 	          <div className="content" >
 	          		<div className="container">
 	          				<div className="left">
-	          					<SearchFilter categories={categories} /> 
+	          					<SearchFilter categories={categories} page="home" /> 
 	          				</div>
 	          				<div className="right">
 	          					<Forum topics={ topics } />

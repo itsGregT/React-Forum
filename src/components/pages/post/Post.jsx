@@ -51,7 +51,7 @@ class Post extends Component {
 					<div className="content">
 						<div className="container">
 							<div className="left">
-								<SearchFilter categories={categories} />
+								<SearchFilter categories={categories} page="post" />
 							</div>
 							<div className="right post-container">
 								<div className="post-title forum-header">

@@ -5,6 +5,8 @@
   .topic:hover {
     background-color: rgba(0, 0, 0, 0.05);
     cursor: pointer; }
+  .topic p {
+    font-family: serif; }
 
 .topic:first-of-type {
   margin-top: 5px; }
