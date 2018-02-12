@@ -7,8 +7,8 @@ import categories from '../../../categories.json';
 
 class Post extends Component {
 	constructor(props) {
-		super(props);
-		this.Id = this.props.params.postId;
+		super(props);;
+		this.Id = this.props.params.params.postId;
 		const defaultState = { post: {} };
 		defaultState.post[this.Id] = {
 			topicId: '',
@@ -51,7 +51,7 @@ class Post extends Component {
 					<div className="content">
 						<div className="container">
 							<div className="left">
-								<SearchFilter categories={categories} page="post" />
+								<SearchFilter categories={categories} page="post" isLoggedIn={ this.props.isLoggedIn } />
 							</div>
 							<div className="right post-container">
 								<div className="post-title forum-header">
