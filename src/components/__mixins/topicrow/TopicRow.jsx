@@ -31,6 +31,7 @@ class TopicRow extends Component {
 				return defGm;
 		}
 	}
+	/* commented out to remove error I was getting
 	componentDidMount() {
 		this.ref = base.bindToState('users', {
 			context: this,
@@ -42,6 +43,7 @@ class TopicRow extends Component {
   			}
 		});
 	}
+	*/
 	render() {
 		const { topic, since, createdDate, createdTime, topicId } = this.props;
 		const posts  = this.state.users[0].posts;
