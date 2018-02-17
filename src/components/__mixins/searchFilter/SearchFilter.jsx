@@ -12,12 +12,12 @@ class SearchFilter extends Component {
 		const { categories } = this.props;
 		return(
 			<div>
-				<NavigationBnt page={this.props.page} />
+				<NavigationBnt page={this.props.page} isLoggedIn={ this.props.isLoggedIn } />
 				<div className="search-filter">
 					<h5>Select a Category</h5>
 					<ul>
 						{this.props.categories.map((category) => {
-							return <FilterCategory key={Math.random()} category={category} />
+							return <FilterCategory key={Math.random()} category={category}/>
 						})			
 						}
 					</ul>
