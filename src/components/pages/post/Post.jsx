@@ -3,6 +3,7 @@ import Header from '../../__templateParts/header/Header';
 import Footer from '../../__templateParts/footer/Footer';
 import SearchFilter from '../../__mixins/searchFilter/SearchFilter';
 import PostComment from '../../__mixins/postComment/PostComment';
+import PostReply from '../../__mixins/postReply/PostReply';
 import base from '../../../base';
 import categories from '../../../categories.json';
 
@@ -70,9 +71,11 @@ class Post extends Component {
 									</div>
 									<div className="fl_c" />
 								</div>
+								<PostComment />
+								<PostReply />
 							</div>
-							<div className="fl_c" />
-							<PostComment />
+							
+							
 						</div>
 					</div>
 				</div>
