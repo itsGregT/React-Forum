@@ -13,7 +13,6 @@ import Footer from './components/__templateParts/footer/Footer';
 //Components
 import Home from './components/pages/home/Home.jsx';
 import Post from './components/pages/post/Post.jsx';
-import Login from './components/pages/login/Login';
 import NewTopic from './components/pages/newtopic/NewTopic';
 import NotFound from './components/pages/404/notfound.jsx';
 
