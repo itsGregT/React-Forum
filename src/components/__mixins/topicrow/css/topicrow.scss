@@ -1,7 +1,10 @@
 .topic {
 	background-color: #fff;
 	min-height: 80px;
-	margin-top: 20px;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px; 
+
 	&:hover {
 		background-color: rgba(0, 0, 0, 0.05);
 		cursor: pointer;

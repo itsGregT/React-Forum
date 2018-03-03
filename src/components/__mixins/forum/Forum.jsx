@@ -33,7 +33,7 @@ class Forum extends Component {
 		const { topics } = this.props;
 		return (
 			<div className="forum">
-				<div className="forum-header">
+				<div className="forum-header section-header">
 					<div className="forum-title">
 						<h2>Forum Component</h2>
 					</div>
