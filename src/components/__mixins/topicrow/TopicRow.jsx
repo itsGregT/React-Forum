@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './css/topicrow.css';
 import defGm from './img/forum_img.png';
-import brdGm from './img/coolcat.png';
-import CardGm from './img/freepik.jpg';
-import PcGm from './img/freepik.jpg';
-import ConsGm from './img/freepik.jpg';
+import brdGm from './img/boardgame-icon.png';
+import CardGm from './img/card-icon.png';
+import PcGm from './img/pc-icon.png';
+import ConsGm from './img/console-icon.png';
 import HandGm from './img/freepik.jpg';
 
 import base from '../../../base';
@@ -31,7 +31,8 @@ class TopicRow extends Component {
 				return defGm;
 		}
 	}
-	/* commented out to remove error I was getting
+
+	/*
 	componentDidMount() {
 		this.ref = base.bindToState('users', {
 			context: this,
@@ -42,8 +43,8 @@ class TopicRow extends Component {
 				equalTo: this.props.topic.authorId
   			}
 		});
-	}
-	*/
+	}*/
+	
 	render() {
 		const { topic, since, createdDate, createdTime, topicId } = this.props;
 		const posts  = this.state.users[0].posts;

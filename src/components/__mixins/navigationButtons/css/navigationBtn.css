@@ -12,17 +12,16 @@
   .navigation-buttons .new-topic-button {
     display: block; }
   .navigation-buttons .back-button {
-    padding: 10px 0 10px 10px;
-    width: 34%;
-    position: relative; }
+    width: 49%; }
     .navigation-buttons .back-button img {
-      width: 30%;
-      position: absolute;
-      left: 2px;
-      top: 23%; }
+      width: 16px;
+      margin-right: 5px; }
+    .navigation-buttons .back-button span {
+      display: inline-block;
+      vertical-align: middle; }
   .navigation-buttons .new-comment-button {
     padding: 10px 0;
-    width: 64%; }
+    width: 49%; }
   .navigation-buttons:after {
     content: '';
     display: block;

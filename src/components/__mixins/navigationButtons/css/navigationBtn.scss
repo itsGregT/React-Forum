@@ -20,21 +20,22 @@
 	}
 	
 	.back-button {
-		padding: 10px 0 10px 10px;
-		width: 34%;
-		position: relative;
+		width: 49%;
 
 		img {
-				width:30%;
-				position:absolute;
-				left:2px;
-				top:23%;
+			width:16px;
+			margin-right: 5px;
+		}
+
+		span {
+			display: inline-block;
+			vertical-align: middle;
 		}
 	}
 
 	.new-comment-button {
 		padding: 10px 0;
-		width:64%;
+		width:49%;
 	}
 
 	&:after {
