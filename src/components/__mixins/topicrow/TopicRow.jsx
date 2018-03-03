@@ -50,28 +50,24 @@ class TopicRow extends Component {
 		const posts  = this.state.users[0].posts;
 		return (
 			<div className="topic">
-				<a href={`post/${topicId}`}>
 					<div className="row-left">
-						<div className="category-img">
-							<img src={this.categoryImg(topic.category)} alt="" />
-						</div>
-						<div className="topic-date">
-							<div className="left-topic-date">
-								<p>Created: </p>
-							</div>
-							<div className="right-topic-date">
-								<p>{ createdDate }</p>
-								<p>{ createdTime }</p>
-							</div>
-							<div className="fl_c"></div>
-						</div>
-					</div>
-					<div className="row-middle">
 						<div className="topic-title">
-							<h3>{topic.title}</h3>
+							<a href={`post/${topicId}`}>
+								<img src={this.categoryImg(topic.category)} alt="" />
+								<h3>{topic.title}</h3>
+							</a>
 						</div>
-						<div className="topic-description">
-							<p>{topic.text}</p>
+						<div className="topic-content">
+							<div className="topic-info">
+								<p><span className="topic-info-title">Category: </span>{ topic.category }</p>
+								<p><span className="topic-info-title">Created: </span>{ createdDate } { createdTime }</p>
+							</div>
+							<div className="topic-description">
+								<p>{topic.text}</p>
+								<a href={`post/${topicId}`}>
+									<h4>View Full Post</h4>
+								</a>
+							</div>
 						</div>
 					</div>
 					<div className="row-right">
@@ -93,7 +89,6 @@ class TopicRow extends Component {
 							</p>
 						</div>
 					</div>
-				</a>
 				<div className="fl_c" />
 			</div>
 		);

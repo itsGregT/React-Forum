@@ -2,17 +2,13 @@
 
 * {
 	box-sizing: border-box;
+	margin:0;
+	padding: 0;
 }
 
 body {
-  margin: 0; 
-  font-family: $secondary-font-stack; 
-}
-
-html {
-	margin:0;
-	padding: 0;
-	background-color:#efefef;
+  font-family: $primary-font-stack; 
+  background-color:#efefef;
 }
 
 .container {

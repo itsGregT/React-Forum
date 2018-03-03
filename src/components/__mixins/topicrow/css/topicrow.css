@@ -4,51 +4,49 @@
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 3px; }
-  .topic:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    cursor: pointer; }
-  .topic p {
-    font-family: serif; }
 
-.topic:first-of-type {
-  margin-top: 5px; }
-
-/******************/
+/**********Left Row**********/
 .row-left {
-  width: 10%;
-  float: left;
-  border-right: 1px solid #ededed; }
-
-.row-left img {
-  width: 100%;
-  max-width: 50px;
-  padding: 5px;
-  transform: translate(40%, 25%); }
-
-.row-middle {
-  width: 70%;
+  width: 80%;
   float: left; }
 
-.row-middle h3 {
-  padding: 4px 7px 0; }
+.topic-title {
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding: 10px 0; }
+  .topic-title img {
+    width: 32px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px; }
+  .topic-title h3 {
+    margin-left: 45px; }
 
-.row-middle .topic-title {
-  border-bottom: 1px solid #ededed; }
+.topic-content {
+  padding: 5px; }
 
-.row-middle .topic-description {
-  padding-left: 5px;
-  padding-top: 15px;
-  line-height: 19px; }
+.topic-info {
+  margin-bottom: 5px;
+  font-size: 0.75em;
+  color: #777; }
+  .topic-info .topic-info-title {
+    font-weight: bold; }
+  .topic-info p {
+    display: inline-block;
+    margin-right: 20px; }
 
+.topic-description h4 {
+  float: right;
+  text-decoration: underline; }
+
+/**********Right Row**********/
 .row-right {
   width: 20%;
   float: left;
   text-align: center;
   border-left: 1px solid #ededed;
   padding: 10px 0; }
-
-.row-right .author-avatar {
-  /*text-align:center;*/ }
 
 .row-right img {
   width: 50%;
@@ -65,20 +63,3 @@
 
 .topic-meta .date {
   font-weight: bold; }
-
-.left-topic-date {
-  width: 50%;
-  float: left; }
-
-.rigth-topic-date {
-  width: 50%;
-  float: left; }
-
-.topic-date {
-  margin-top: 20px;
-  text-align: center; }
-  .topic-date p {
-    font-size: 0.57em; }
-  .topic-date .left-topic-date p {
-    font-weight: bold;
-    font-size: 0.7em; }
