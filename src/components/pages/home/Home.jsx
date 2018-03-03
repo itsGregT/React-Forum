@@ -12,7 +12,6 @@ import data from '../../../topics.json';
 import categories from '../../../categories.json';
 
 
-
 class Home extends Component {
 	constructor() {
 		super();
@@ -40,6 +39,7 @@ class Home extends Component {
 	render() {
 		const { topics } = this.state;
 		const { isLoggedIn } = this.props;
+
 		return (
 			<div id="home">
 			<Header />	

@@ -43,9 +43,6 @@ class Post extends Component {
 			createdDate = date.getMonth() + 1 + '/' + date.getDate() + ' ' + date.getFullYear();
 			createdTime = date.getHours() + ':' + date.getMinutes();
 		}
-		console.log(createdDate);
-		console.log(createdTime);
-		console.log(post);
 		return (
 			<div>
 				<Header />
