@@ -64,9 +64,6 @@ class TopicRow extends Component {
 							</div>
 							<div className="topic-description">
 								<p>{topic.text}</p>
-								<a href={`post/${topicId}`}>
-									<h4>View Full Post</h4>
-								</a>
 							</div>
 						</div>
 					</div>
