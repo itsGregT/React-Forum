@@ -49,7 +49,6 @@ firebaseApp.auth().onAuthStateChanged((user) => {
 						<Header />	
 						<Match exactly pattern="/" render={ () => <Home isLoggedIn={ isLoggedIn } /> } />
 						<Match pattern="/post/:postId" render={(params) => <Post params={ params } isLoggedIn={ isLoggedIn } /> } />
-						<Match exactly pattern="/new" render={ () => <NewTopic isLoggedIn={ isLoggedIn } /> } />
 						<Miss component={NotFound} />
 						<Footer />
 					</div>
