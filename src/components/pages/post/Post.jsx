@@ -45,7 +45,6 @@ class Post extends Component {
 		}
 		return (
 			<div>
-				<Header />
 				<div className="content">
 					<div className="content">
 						<div className="container">
@@ -77,7 +76,6 @@ class Post extends Component {
 					</div>
 				</div>
 
-				<Footer />
 			</div>
 		);
 	}
