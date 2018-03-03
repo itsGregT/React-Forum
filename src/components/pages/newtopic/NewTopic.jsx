@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 import SearchFilter from '../../__mixins/searchFilter/SearchFilter';
 import base from '../../../base';
+import './css/newTopic.css';
 
 //Template parts
 import Header from '../../__templateParts/header/Header';
@@ -66,7 +67,8 @@ class NewTopic extends Component {
 											<label htmlFor=""><h3>Text:</h3></label>
 											<textarea name="" id="" cols="30" rows="10" ref={ (input) => this.text = input}></textarea>
 										</form>
-										<button onClick={this.post} className="btn">Post</button>
+										<a href="#" className="btn">Post</a>
+										<div className="fl_c"></div>
 									</div>
 		          				</div>
 

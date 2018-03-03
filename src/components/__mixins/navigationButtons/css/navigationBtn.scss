@@ -1,40 +1,29 @@
 @import '../../../../css/variables.scss';
 
 .navigation-buttons {
-	margin-bottom: 10px;
+	margin-bottom: 4%;
 	color: $btn-text-color;
-	box-sizing: border-box;
 
 	.btn {
-		border-radius: 3px;
-		display:inline-block;
-		background-color: #7f1ae5;
-
-		&:hover {
-			background-color: rgba(127,26,229, 0.6);
-		}
+		width: 48%;
+		max-height: 32px;
 	}
 
 	.new-topic-button {
 		display:block;
+		width: 100%
 	}
 	
 	.back-button {
-		padding: 10px 0 10px 10px;
-		width: 34%;
-		position: relative;
-
 		img {
-				width:30%;
-				position:absolute;
-				left:2px;
-				top:23%;
+			width:16px;
+			margin-right: 5px;
 		}
-	}
 
-	.new-comment-button {
-		padding: 10px 0;
-		width:64%;
+		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
 	}
 
 	&:after {

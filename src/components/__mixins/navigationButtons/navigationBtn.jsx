@@ -30,7 +30,7 @@ const NavigationBnt = (props) => {
 
 		);
 	} else if (!props.isLoggedIn && props.hasOwnProperty('page') && props.page === 'post' ) {
-			BackBtn = (<a href="/" className="back-button btn"><span><img src={arrow} alt=""/></span>Back</a> );
+			BackBtn = (<a href="/" className="back-button btn"><span><img src={arrow} alt=""/></span><span>Back</span></a> );
 			actionBnt = (<a href="/login" className="new-comment-button btn">Respond</a> );
 			console.log(props.isLoggedIn);
 			return (
