@@ -1,22 +1,22 @@
 [
   {
-    "title": "Category 1",
+    "title": "PC Games",
     "count": "100"
   },
   {
-    "title": "Category 2",
+    "title": "Console Games",
     "count": "17"
   },
   {
-    "title": "Category 3",
+    "title": "Board Games",
     "count": "37"
   },
   {
-    "title": "Category 4",
+    "title": "Card Games",
     "count": "812"
   },
   {
-    "title": "Category 5",
+    "title": "Handheld Games",
     "count": "7"
   }
 ]
