@@ -13,7 +13,11 @@ class Post extends Component {
 	constructor(props) {
 		super(props);;
 		this.Id = this.props.params.params.postId;
-		const defaultState = { post: {} };
+		const defaultState = { 
+								post: {},
+								comments: {} 
+
+							};
 		defaultState.post[this.Id] = {
 			topicId: '',
 			title: '',
@@ -27,7 +31,7 @@ class Post extends Component {
 		this.state = defaultState;
 	}
 	componentWillMount() {
-		this.ref = base.bindToState('topics', {
+		this.topicRef = base.bindToState('topics', {
 			context: this,
 			state: 'post',
 			queries: {
@@ -35,6 +39,34 @@ class Post extends Component {
 				equalTo: this.Id
 			}
 		});
+		this.commentRef = base.bindToState('comments', {
+			context: this,
+			state: 'comments',
+			queries: {
+			orderByChild: 'topicId',
+				equalTo: this.Id
+			}
+		});
+	}
+	comment() {
+		const time = Date.now();
+ 		const input = {
+ 			text: this.respText.value,
+ 			authorAvatar: this.props.user.authorAvatar,
+ 			authorName: this.props.user.authorName,
+ 			topicId:this.Id,
+ 			posted: time
+ 		}
+		
+  		this.postRef = base.push('comments', {
+		    data: input
+		  }).then(newLocation => {
+		    let generatedKey = newLocation.key;
+		  }).catch(err => {
+		    //handle error
+		  });
+		 
+		this.setState({respond:'', reply:false, replyStyleInit: {display: 'none' }});	
 	}
 	render() {
 		const post = this.state.post[this.Id];
@@ -65,13 +97,13 @@ class Post extends Component {
 									<div className="author-info">
 										<img src={post.authorAvatar} alt=""/>
 										<p>Author: {post.authorName}</p>
-										<p>Created: {post.created}</p>
+										<p>Created: {createdDate}</p>
 									</div>
 									<div className="fl_c" />
 								</div>
-								<PostComment />
-								<PostComment />
-								<PostComment />
+								{ Object.keys(this.state.comments).map( (comment, key) => { return <PostComment key={key} comment={this.state.comments[comment]} /> } ) }
+								
+>>>>>>> 6cc08ec69373a49e079209062c6c4b2d2c4d34cd
 								<PostReply />
 							</div>
 							

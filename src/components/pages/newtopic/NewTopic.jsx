@@ -18,8 +18,8 @@ class NewTopic extends Component {
 	post() {
 		const created = Date.now();
 		const input = {
-			authorAvatar: '',
-			authorName: '',
+			authorAvatar: this.props.user.authorAvatar,
+			authorName: this.props.user.authorName,
 			created: created,
 			title: this.title.value,
 			text: this.text.value,
@@ -39,7 +39,6 @@ class NewTopic extends Component {
 			if (this.state.redirect)  return (<Redirect to={this.state.url || '/'} />)
 			return (
 				<div id="home">
-				<Header />	
 		          <div className="content" >
 		          		<div className="container">
 		          				<div className="left">
@@ -67,7 +66,7 @@ class NewTopic extends Component {
 											<label htmlFor=""><h3>Text:</h3></label>
 											<textarea name="" id="" cols="30" rows="10" ref={ (input) => this.text = input}></textarea>
 										</form>
-										<a href="#" className="btn">Post</a>
+										<a href="#" onClick={this.post} className="btn">Post</a>
 										<div className="fl_c"></div>
 									</div>
 		          				</div>
@@ -75,7 +74,6 @@ class NewTopic extends Component {
 		          		</div>
 		          </div>
 		         <div className="fl_c"></div> 
-				<Footer />
 				</div>
 			)
 		} else {

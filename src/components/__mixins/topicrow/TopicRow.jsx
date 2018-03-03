@@ -63,12 +63,6 @@ class TopicRow extends Component {
 								By: <span className="author">{topic.authorName} </span>
 							</p>
 							<p>
-								Status: <span className="author">Veteran</span>
-							</p>
-							<p>
-								Posts: <span className="author">{ posts} </span>
-							</p>
-							<p>
 								Member Since: <span className="date">{ since }</span>
 							</p>
 						</div>

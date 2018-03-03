@@ -30,9 +30,6 @@ class Home extends Component {
 		});
 
 	}
-	componentDidMount() {
-
-	}
 	componentWillUnmount() {
 		base.removeBinding(this.ref);
 	}
