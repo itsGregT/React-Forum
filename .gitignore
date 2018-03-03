@@ -7,6 +7,7 @@
 /coverage
 # Rebase logins
 /src/base.js
+/src/firebase.js
 
 # production
 /build
