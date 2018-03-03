@@ -18,17 +18,17 @@ header {
 }
 
 .app-header {
-  color: white;
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+	color: white;
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .app-title {
-  font-size: 2em;
-  margin: 0;
-  font-weight: 400;
+	font-size: 2em;
+	margin: 0;
+	font-weight: 400;
 }
 
 .app-title span {
@@ -40,9 +40,9 @@ header {
 nav {
 	display: inline-block;
 	position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 nav a,
@@ -57,5 +57,5 @@ nav a:visited {
 }
 
 nav a:hover {
-	color: #7f1ae5;
+	color: $secondary-text-color;
 }

@@ -13,7 +13,7 @@ const NavigationBnt = (props) => {
 			break;
 			case 'post' :
 			BackBtn = (<a href="/" className="back-button btn"><span><img src={arrow} alt=""/></span>Back</a> );
-			actionBnt = (<a href="/" className="new-comment-button btn">Respond</a> );
+			actionBnt = (<a href="#reply" className="new-comment-button btn">Respond</a> );
 			break;
 			case 'new' :
 			BackBtn = (<a href="/" className="back-button btn"><span><img src={arrow} alt=""/></span>Back</a> );

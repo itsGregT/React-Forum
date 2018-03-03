@@ -3,14 +3,20 @@
 .reply-form {
 	margin-top: 15px;
 	padding-top: 15px;
-	border-top: 1px solid #333;
+	border-top: 1px solid #ccc;
 
 	textarea {
 		outline: none;
 		padding: 5px;
 		resize: none;
 		height: 100px;
-		border: none;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		transition: all linear .25s;
+
+		&:focus {
+			border: 1px solid #0288D1;
+		}
 	}
 
 	input[type="submit"] {
@@ -22,5 +28,23 @@
 		height: auto;
 		margin-top: 5px;
 		float: right;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.author-info {
+	float: right;
+	width: 20%;
+	border-left: 1px solid #ccc;
+	padding: 5px;
+
+	img {
+		width: 75%;
+		display: block;
+		margin: auto;
+		margin-bottom: 15px;
 	}
 }

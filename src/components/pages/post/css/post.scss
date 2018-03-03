@@ -1,0 +1,76 @@
+@import '../../../../css/variables.scss';
+
+.post-container {
+	padding: 0 15px;
+}
+
+.post {
+	float: left;
+	width: 80%;
+	padding: 5px;
+
+	.post-info {
+		font-style: italic;
+	}
+}
+
+.btn {
+	border-radius: 3px;
+	display:inline-block;
+	background-color: $btn-background;
+	color: $btn-text-color;
+	border: none;
+	text-align: center;
+	padding: 7px 0;
+	font-family: $primary-font-stack;
+	transition: all linear 0.25s;
+
+	&:hover {
+		box-shadow: 0px -75px #000 inset;
+	}
+}
+
+.new-post-body {
+	padding:20px;
+	color:inherit;
+
+	select {
+		display:inline-block;
+		margin-left: 10px;
+		height:35px;
+	}
+
+	h3, label {
+		display:inline-block;
+		width:auto;
+	}
+
+	.category-select {
+		margin-top: 10px;
+	}
+}
+
+form {
+	width: 100%;
+	display:block;
+
+	label, input, button, textarea  {
+		display:block;
+		width: 100%;
+		margin:auto;
+	}
+	
+	input {
+		height: 30px;
+	}
+
+	label {
+		margin: 5px auto 2px;
+		color: #6b6a6a;
+	}
+
+	button {
+		margin-top: 20px;
+		padding:10px;
+	}
+}

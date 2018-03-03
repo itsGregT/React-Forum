@@ -31,19 +31,6 @@ class TopicRow extends Component {
 				return defGm;
 		}
 	}
-
-	/*Get error when uncommented - Greg
-	componentDidMount() {
-		this.ref = base.bindToState('users', {
-			context: this,
-			state: 'users',
-			asArray:true,
-			queries: {
-				orderByKey: 'user',
-				equalTo: this.props.topic.authorId
-  			}
-		});
-	}*/
 	
 	render() {
 		const { topic, since, createdDate, createdTime, topicId } = this.props;
