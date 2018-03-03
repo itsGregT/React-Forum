@@ -32,7 +32,7 @@ class TopicRow extends Component {
 		}
 	}
 
-	/*
+	/*Get error when uncommented - Greg
 	componentDidMount() {
 		this.ref = base.bindToState('users', {
 			context: this,
@@ -59,7 +59,7 @@ class TopicRow extends Component {
 							<div className="left-topic-date">
 								<p>Created: </p>
 							</div>
-							<div className="rigth-topic-date">
+							<div className="right-topic-date">
 								<p>{ createdDate }</p>
 								<p>{ createdTime }</p>
 							</div>

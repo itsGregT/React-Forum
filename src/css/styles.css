@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: serif; }
+  font-family: "Roboto Mono", serif; }
 
 html {
   margin: 0;
@@ -66,12 +66,17 @@ a, a:hover, a:active, a:visited {
     margin-bottom: 15px; }
 
 .btn {
-  padding: 10px 20px;
-  border: 1px solid #7f1ae5;
+  border-radius: 3px;
+  display: inline-block;
   background-color: #7f1ae5;
-  text-align: center;
   color: #fff;
-  cursor: pointer; }
+  border: none;
+  text-align: center;
+  padding: 7px 0;
+  font-family: "Rubik", sans-serif;
+  transition: all linear 0.25s; }
+  .btn:hover {
+    box-shadow: 0px -75px #000 inset; }
 
 .new-post-body {
   padding: 20px;
