@@ -39,10 +39,8 @@ class Home extends Component {
 	render() {
 		const { topics } = this.state;
 		const { isLoggedIn } = this.props;
-
 		return (
 			<div id="home">
-			<Header />	
 	          <div className="content" >
 	          		<div className="container">
 	          				<div className="left">
@@ -55,7 +53,6 @@ class Home extends Component {
 	          		</div>
 	          </div>
 	         <div className="fl_c"></div> 
-			<Footer />
 			</div>
 		)
 	}
