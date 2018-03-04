@@ -34,7 +34,7 @@ const NavigationBnt = (props) => {
 			actionBnt = (<a href="/login" className="new-comment-button btn">Respond</a> );
 			return (
 				<div className="navigation-buttons">
-					<a href="/" className="back-button btn"><span><img src={arrow} alt=""/></span>Back</a>
+					<a href="/" className="full-width back-button btn"><span><img src={arrow} alt=""/></span>Back</a>
 				</div>
 
 			);
