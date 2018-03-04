@@ -20,7 +20,7 @@ class Header extends Component {
   shrinkHeader() {
     const header = document.getElementById('header');
     const distanceY = window.pageYOffset;
-      if(distanceY > 101) {
+      if(distanceY >= 101) {
         header.classList.add('shrink');
       } else {
         header.classList.remove('shrink');
@@ -65,7 +65,7 @@ class Header extends Component {
           <a href="/"><h1 className='app-title'>Forum<span>Header</span></h1></a>
         </div>
         <Navigation login={this.login} user={this.props.user}/>
-        {this.props.user && <div className="user-avatar"><img src={this.props.user.authorAvatar} alt="" style={ {width: '50px'} }/></div>}
+        {this.props.user && <div className="user-avatar"><img src={this.props.user.authorAvatar} alt=""/></div>}
       </header>
     );
   }

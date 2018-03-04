@@ -12,7 +12,7 @@ class PostReply extends Component {
 	}
 	render() {
 		return(
-			<div>
+			<div id="reply">
 				<form className="reply-form">
 					<textarea placeholder="Remember, be nice!" ref={(input) => this.text = input}></textarea>
 				</form>

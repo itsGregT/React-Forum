@@ -34,7 +34,7 @@ header {
 nav {
   display: inline-block;
   position: absolute;
-  right: 15px;
+  right: 70px;
   top: 50%;
   transform: translateY(-50%); }
 
@@ -50,3 +50,16 @@ nav a:visited {
 
 nav a:hover {
   color: #0288D1; }
+
+.user-avatar {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%); }
+  .user-avatar img {
+    max-width: 50px;
+    border-radius: 50%;
+    transition: all 0.25s ease; }
+
+.shrink .user-avatar img {
+  max-width: 40px; }

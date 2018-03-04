@@ -5,4 +5,17 @@
 	float: right;
 	margin-top: 10px;
 	color: $btn-text-color;
+} 
+
+.new-post-body textarea,
+input[type="text"],
+select {
+	outline:  none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	transition: all 0.25s ease;
+
+	&:focus {
+		border: 1px solid #0288D1;
+	}
 }

@@ -37,7 +37,7 @@ class Forum extends Component {
 					<div className="forum-title">
 						<h2>Forum Component</h2>
 					</div>
-					<div ref={input => (this.arrow = input)} className="arrors" onClick={() => this.expand(this)}>
+					<div ref={input => (this.arrow = input)} className="arrows" onClick={() => this.expand(this)}>
 						<div className="leftArrow" />
 						<div className="rightArrow" />
 					</div>

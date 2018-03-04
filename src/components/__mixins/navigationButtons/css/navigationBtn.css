@@ -3,7 +3,7 @@
   margin-bottom: 4%;
   color: #fff; }
   .navigation-buttons .btn {
-    width: 48%;
+    width: 49%;
     max-height: 32px; }
   .navigation-buttons .new-topic-button {
     display: block;
@@ -14,6 +14,8 @@
   .navigation-buttons .back-button span {
     display: inline-block;
     vertical-align: middle; }
+  .navigation-buttons .full-width.back-button {
+    width: 100%; }
   .navigation-buttons:after {
     content: '';
     display: block;

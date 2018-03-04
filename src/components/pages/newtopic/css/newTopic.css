@@ -4,3 +4,15 @@
   float: right;
   margin-top: 10px;
   color: #fff; }
+
+.new-post-body textarea,
+input[type="text"],
+select {
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: all 0.25s ease; }
+  .new-post-body textarea:focus,
+  input[type="text"]:focus,
+  select:focus {
+    border: 1px solid #0288D1; }

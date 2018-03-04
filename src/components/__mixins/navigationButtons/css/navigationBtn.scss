@@ -5,7 +5,7 @@
 	color: $btn-text-color;
 
 	.btn {
-		width: 48%;
+		width: 49%;
 		max-height: 32px;
 	}
 
@@ -24,6 +24,10 @@
 			display: inline-block;
 			vertical-align: middle;
 		}
+	}
+
+	.full-width.back-button {
+		width: 100%;
 	}
 
 	&:after {

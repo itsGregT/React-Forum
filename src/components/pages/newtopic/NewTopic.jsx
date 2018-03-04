@@ -50,7 +50,7 @@ class NewTopic extends Component {
 									</div>
 									<div className="full-post new-post-body">
 										<form>
-											<label htmlFor=""><h3>Title:</h3></label>
+											<label htmlFor=""><h3>Title</h3></label>
 											<input type="text" name="title" ref={ (input) => { this.title = input } }/>
 											<div className="category-select">
 												<label htmlFor=""><h3>Category</h3></label>
@@ -60,10 +60,10 @@ class NewTopic extends Component {
 													<option value="Card Games">Card Games</option>
 													<option value="PC Games">PC Games</option>
 													<option value="Console Games">Console Games</option>
-													<option value="Handheld Games">Handheld Gamess</option>
+													<option value="Handheld Games">Handheld Games</option>
 												</select>
 											</div>
-											<label htmlFor=""><h3>Text:</h3></label>
+											<label htmlFor=""><h3>Text</h3></label>
 											<textarea name="" id="" cols="30" rows="10" ref={ (input) => this.text = input}></textarea>
 										</form>
 										<a href="#" onClick={this.post} className="btn">Post</a>
