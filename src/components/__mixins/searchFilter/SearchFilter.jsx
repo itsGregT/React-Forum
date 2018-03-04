@@ -23,15 +23,17 @@ class SearchFilter extends Component {
 		return(
 			<div>
 				<NavigationBnt page={this.props.page} isLoggedIn={ this.props.isLoggedIn } />
-				<div className="search-filter">
-					<h5>Select a Category</h5>
-					<ul>
-						{Object.keys(this.state.categories).map((category) => {
-							return <FilterCategory key={Math.random()} category={this.state.categories[category]} displayCategory={this.props.displayCategory}/>
-						})			
-						}
-					</ul>
-				</div>
+				{ 
+					this.props.page == 'home' && (<div className="search-filter">
+						<h5>Select a Category</h5>
+						<ul>
+							{Object.keys(this.state.categories).map((category) => {
+								return <FilterCategory key={Math.random()} category={this.state.categories[category]} displayCategory={this.props.displayCategory}/>
+							})			
+							}
+						</ul>
+					</div>) 
+				}
 			</div>
 		)
 	}
