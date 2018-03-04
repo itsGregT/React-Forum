@@ -2,12 +2,22 @@ import React, { Component } from 'react';
 import './css/postReply.css';
 
 class PostReply extends Component {
-	render(){
+	constructor() {
+		super();
+		this.post = this.post.bind(this);
+	}
+	post() {
+		this.props.postreply(this.text.value);
+		this.text.value = '';
+	}
+	render() {
 		return(
-			<form class="reply-form">
-				<textarea placeholder="Remember, be nice!"></textarea>
-				<input type="submit" class="btn" value="Reply" />
-			</form>
+			<div>
+				<form className="reply-form">
+					<textarea placeholder="Remember, be nice!" ref={(input) => this.text = input}></textarea>
+				</form>
+				<button className="btn" onClick={ this.post }>Reply</button>
+			</div>
 		);
 	}
 }

@@ -11,6 +11,7 @@ class Post extends Component {
 	constructor(props) {
 		super(props);;
 		this.Id = this.props.params.params.postId;
+		this.comment = this.comment.bind(this);
 		const defaultState = { 
 								post: {},
 								comments: {} 
@@ -46,10 +47,10 @@ class Post extends Component {
 			}
 		});
 	}
-	comment() {
+	comment(text) {
 		const time = Date.now();
  		const input = {
- 			text: this.respText.value,
+ 			text: text,
  			authorAvatar: this.props.user.authorAvatar,
  			authorName: this.props.user.authorName,
  			topicId:this.Id,
@@ -64,7 +65,7 @@ class Post extends Component {
 		    //handle error
 		  });
 		 
-		this.setState({respond:'', reply:false, replyStyleInit: {display: 'none' }});	
+		//this.setState({respond:'', reply:false, replyStyleInit: {display: 'none' }});	
 	}
 	render() {
 		const post = this.state.post[this.Id];
@@ -101,7 +102,7 @@ class Post extends Component {
 								</div>
 								{ Object.keys(this.state.comments).map( (comment, key) => { return <PostComment key={key} comment={this.state.comments[comment]} /> } ) }
 								
-								<PostReply />
+								{ this.props.user && <PostReply postreply={this.comment} />}
 							</div>
 							
 							
