@@ -15,23 +15,42 @@ import categories from '../../../categories.json';
 class Home extends Component {
 	constructor() {
 		super();
-		this.state = { topics: []};
+		this.state = { topics: [], category: 'all'};
+		this.displayCategory = this.displayCategory.bind(this);
 	}
 
 	componentWillMount() {	
-		const oneDay = 86400000;
-		const dateNow = Date.now() - (oneDay * 7);
-		this.ref = base.bindToState('topics', {
+		let queries;
+		if (this.state.category != 'all') {
+			queries = {orderByChild: 'category', equalTo: this.state.category};
+		} else {
+			queries = {orderByChild: 'created'};
+		}
+		this.ref = base.fetch('topics', {
 			context: this,
 			state: 'topics',
-			queries: {
-				orderByChild: 'created'
-  			}
+			queries: queries,
+			then(data) {
+				this.setState({topics:data || []});
+			}
 		});
 
 	}
-	componentWillUnmount() {
-		base.removeBinding(this.ref);
+	displayCategory(category) {
+		let queries;
+		if (category) {
+			queries = {orderByChild: 'category', equalTo: category};
+		} else {
+			queries = {orderByChild: 'created'};
+		}
+		this.ref = base.fetch('topics', {
+			context: this,
+			state: 'topics',
+			queries: queries,
+			then(data) {
+				this.setState({topics:data || []});
+			}
+		});
 	}
 	render() {
 		const { topics } = this.state;
@@ -41,7 +60,7 @@ class Home extends Component {
 	          <div className="content" >
 	          		<div className="container">
 	          				<div className="left">
-	          					<SearchFilter categories={categories} page="home" isLoggedIn={ isLoggedIn }/> 
+	          					<SearchFilter categories={categories} page="home" isLoggedIn={ isLoggedIn } displayCategory={this.displayCategory}/> 
 	          				</div>
 	          				<div className="right">
 	          					<Forum topics={ topics } />

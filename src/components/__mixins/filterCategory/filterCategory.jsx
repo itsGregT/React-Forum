@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 
-class FilterCategory extends Component {
-	constructor() {
-		super();
-	}
-
-	render() {
-		const { category } = this.props;
+const FilterCategory = (props) => {
+		const { category } = props;
 		return (
-			<li>{category.title}<span className="filter-count">({category.count})</span></li>
+			<li onClick={() => props.displayCategory(category.name) } >{category.name}<span className="filter-count">({category.count})</span></li>
 		)
-	}
 }
 
 export default FilterCategory
