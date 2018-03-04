@@ -54,6 +54,7 @@ class Forum extends Component {
 						})}
 					</div>
 				</div>
+				<div className="fl_c"></div>
 			</div>
 		);
 	}

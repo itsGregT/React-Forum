@@ -17,6 +17,7 @@ class PostReply extends Component {
 					<textarea placeholder="Remember, be nice!" ref={(input) => this.text = input}></textarea>
 				</form>
 				<button className="btn" onClick={ this.post }>Reply</button>
+				<div className="fl_c"></div>
 			</div>
 		);
 	}

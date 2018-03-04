@@ -8,7 +8,7 @@
 
 body {
   font-family: $primary-font-stack; 
-  background-color:#efefef;
+  background-color:#fff;
 }
 
 .container {
@@ -21,11 +21,13 @@ h1,h2,h3,h4,h5,h6, p {
 	padding: 0;
 	margin:0;
 }
+
 a, a:hover, a:active, a:visited {
 	text-decoration: none;
 	color:inherit;
 	font-family: $primary-font-stack
 }
+
 .content {
 	min-height: 100vh;
 	margin-top: 50px;
@@ -43,99 +45,4 @@ a, a:hover, a:active, a:visited {
 
 .fl_c {
 	clear:both;
-}
-
-/******Post******/
-.post-container {
-	padding: 0 15px;
-}
-
-.full-post {
-	background-color: #fff;
-}
-
-.post {
-	float: left;
-	width: 80%;
-	padding: 5px;
-
-	.post-info {
-		font-style: italic;
-	}
-}
-
-.author-info {
-	float: right;
-	width: 20%;
-	border-left: 1px solid #333;
-	padding: 5px;
-
-	img {
-		width: 75%;
-		display: block;
-		margin: auto;
-		margin-bottom: 15px;
-	}
-}
-
-.btn {
-	border-radius: 3px;
-	display:inline-block;
-	background-color: $btn-background;
-	color: $btn-text-color;
-	border: none;
-	text-align: center;
-	padding: 7px 0;
-	font-family: $primary-font-stack;
-	transition: all linear 0.25s;
-
-	&:hover {
-		box-shadow: 0px -75px #000 inset;
-	}
-}
-
-.new-post-body {
-	padding:20px;
-	color:inherit;
-	select {
-		display:inline-block;
-		margin-left: 10px;
-		height:35px;
-	}
-	h3, label {
-		display:inline-block;
-		width:auto;
-	}
-	.category-select {
-		margin-top: 10px;
-	}
-}
-
-form {
-	width: 100%;
-	display:block;
-
-	label, input, button, textarea  {
-		display:block;
-		width: 100%;
-		margin:auto;
-	}
-	
-	input {
-		height: 30px;
-	}
-
-	label {
-		margin: 5px auto 2px;
-		color: #6b6a6a;
-	}
-
-	button {
-		margin-top: 20px;
-		padding:10px;
-	}
-}
-
-.section-header {
-	font-family: $primary-font-stack;
 }

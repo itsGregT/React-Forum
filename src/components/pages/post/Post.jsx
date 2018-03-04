@@ -7,6 +7,8 @@ import PostReply from '../../__mixins/postReply/PostReply';
 import base from '../../../base';
 import categories from '../../../categories.json';
 
+import './css/post.css';
+
 class Post extends Component {
 	constructor(props) {
 		super(props);;
@@ -85,7 +87,7 @@ class Post extends Component {
 								<SearchFilter categories={categories} page="post" isLoggedIn={ this.props.isLoggedIn } />
 							</div>
 							<div className="right post-container">
-								<div className="post-title forum-header">
+								<div className="post-title forum-header section-header">
 									<h2>{post.title}</h2>
 								</div>
 								<div className="full-post">
@@ -101,7 +103,6 @@ class Post extends Component {
 									<div className="fl_c" />
 								</div>
 								{ Object.keys(this.state.comments).map( (comment, key) => { return <PostComment key={key} comment={this.state.comments[comment]} /> } ) }
-								
 								{ this.props.user && <PostReply postreply={this.comment} />}
 							</div>
 							

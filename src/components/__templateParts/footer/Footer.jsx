@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
         <footer>
-          <h1>This is Forum Footer</h1>
+          <p>&copy; 2018 ForumFooter, Inc</p>
         </footer>
     );
   }
